@@ -31,7 +31,7 @@ img {
     display: block;
 }
 
-.containor {
+.containor{
     max-width: 141rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -113,11 +113,12 @@ header .row nav {
 
 header .row nav ul {
     list-style-type: none;
+   
 }
 
 header .row nav ul li {
     display: inline-block;
-
+    position: relative;
 }
 
 header .row nav ul li a {
@@ -132,11 +133,55 @@ header .row > a i {
     color: var(--secondary-color);
     padding-left: 3.3rem;
 }
+header .row nav ul li a:hover {
+    background-color: #9B9B9B;
+}
 
 .dark-header {
     background-color: #020202;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+header .row nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 5.8rem;
+    left: 0;
+    width: 29rem;
+    background-color:rgba(0 0 0 / 0.4)
+
+}
+header .row nav ul li ul li{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+}
+header .row nav ul li ul li a{
+    display: inline-block;
+    padding: 3.3rem;
+    width: 100%;
+}
+header .row nav ul li:hover ul {
+    display: inline-block
+}
+header .row nav ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 29rem;
+    display: none !important;
+}
+header .row nav ul li ul li:hover ul{
+    display: inline-block !important;
+}
+header .row nav > i{
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    display: none !important;
+}
+header .row nav ul > i{
+    display: none !important;
+}
+
 
 /***********************/
 
@@ -221,7 +266,7 @@ header .row > a i {
 
 
 @media screen and (max-width:1250px) {
-    header .row nav ul li a {
+    header .row nav ul li  a {
         padding: 1.3rem;
     }
 
@@ -229,7 +274,7 @@ header .row > a i {
         width: 18rem;
     }
 
-    header .row>a i {
+    header .row > a i {
         padding-left: 1.3rem;
     }
 }
@@ -238,17 +283,33 @@ header .row > a i {
     header .row nav > ul{
         position: absolute;
         top: 1rem;
-        right: 0;
-
+        right: -30%;
+        width: 30%;
+        height: 100vh;
     }
     header .row nav ul li{
         display: block;
         width: 100%;
+        
     }
     header .row nav ul li a{
         display: block;
         width: 100%;
     }
+    header .row nav ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header nav ul li ul li a {
+        padding-left: 6rem;
+    }
+    header.row nav ul li ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
     header .row .logo{
         order: 0;
     }
@@ -258,7 +319,21 @@ header .row > a i {
     header .row .search {
         order: 1;
         position: absolute;
-        right: 20%;
+        right: 40%;
+    }
+    header .row  nav ul > i{
+        color: #ECECEC;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+    }
+    header .row nav > i{
+        display: inline-block !important;
+    }
+    .showHide{
+        right: 0;
     }
 
 }
