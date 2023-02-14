@@ -31,7 +31,7 @@ img {
     display: block;
 }
 
-.containor{
+.containor {
     max-width: 141rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -113,7 +113,7 @@ header .row nav {
 
 header .row nav ul {
     list-style-type: none;
-   
+
 }
 
 header .row nav ul li {
@@ -128,11 +128,12 @@ header .row nav ul li a {
     padding: 3.3rem;
 }
 
-header .row > a i {
+header .row>a i {
     font-size: 1.8rem;
     color: var(--secondary-color);
     padding-left: 3.3rem;
 }
+
 header .row nav ul li a:hover {
     background-color: #9B9B9B;
 }
@@ -141,44 +142,51 @@ header .row nav ul li a:hover {
     background-color: #020202;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-header .row nav ul li ul{
+
+header .row nav ul li ul {
     display: none;
     position: absolute;
     top: 5.8rem;
     left: 0;
     width: 29rem;
-    background-color:rgba(0 0 0 / 0.4)
-
+    background-color: rgba(0 0 0 / 0.4)
 }
-header .row nav ul li ul li{
+
+header .row nav ul li ul li {
     display: inline-block;
     width: 100%;
     position: relative;
 
 }
-header .row nav ul li ul li a{
+
+header .row nav ul li ul li a {
     display: inline-block;
     padding: 3.3rem;
     width: 100%;
 }
+
 header .row nav ul li:hover ul {
     display: inline-block
 }
-header .row nav ul li ul li ul{
+
+header .row nav ul li ul li ul {
     position: absolute;
     top: 0;
     left: 29rem;
     display: none !important;
 }
-header .row nav ul li ul li:hover ul{
+
+header .row nav ul li ul li:hover ul {
     display: inline-block !important;
 }
-header .row nav > i{
+
+header .row nav>i {
     color: var(--secondary-color);
     font-size: 1.8rem;
     display: none !important;
 }
-header .row nav ul > i{
+
+header .row nav ul>i {
     display: none !important;
 }
 
@@ -205,7 +213,7 @@ header .row nav ul > i{
 
 #hero .hero-data {
     position: absolute;
-    top:39%;
+    top: 39%;
 }
 
 .hero-data h1 {
@@ -261,12 +269,52 @@ header .row nav ul > i{
 
 /****************************************/
 
+/*************Explore Section**********/
+
+.main-titel h2 {
+    padding-top: 17.8rem;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 3rem;
+}
+
+.main-titel p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #878787;
+    margin-bottom: 8.4rem;
+}
+.explore-slider .swiper-slide{
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
+    border-radius: 1rem;
+}
+.explore-slider .swiper-slide .card-img {
+   
+}
+
+.explore-slider .swiper-wrapper {
+    padding: 1rem 0;
+}
 
 
+.explore-slider .swiper-slide .card-img img {
+    border-radius: 1rem 1rem 0 0;
+    width: 44.4rem;
+    height: 31.6rem;
+    object-fit: cover;
+    object-position: center center;
+}
 
+
+/*************************************/
 
 @media screen and (max-width:1250px) {
-    header .row nav ul li  a {
+    header .row nav ul li a {
         padding: 1.3rem;
     }
 
@@ -274,66 +322,79 @@ header .row nav ul > i{
         width: 18rem;
     }
 
-    header .row > a i {
+    header .row>a i {
         padding-left: 1.3rem;
     }
 }
 
 @media screen and (max-width:992px) {
-    header .row nav > ul{
+    header nav>ul {
         position: absolute;
         top: 1rem;
-        right: -30%;
-        width: 30%;
+        right: -35%;
+        width: 35%;
         height: 100vh;
+        transition: all 0.5s;
+        background-color: grey;
     }
-    header .row nav ul li{
+
+    header .row nav ul li {
         display: block;
         width: 100%;
-        
+
     }
-    header .row nav ul li a{
+
+    header .row nav ul li a {
         display: block;
         width: 100%;
     }
-    header .row nav ul li ul{
+
+    header .row nav ul li ul {
         position: relative;
         top: 0;
         left: 0;
     }
+
     header nav ul li ul li a {
         padding-left: 6rem;
     }
-    header.row nav ul li ul li ul{
+
+    header.row nav ul li ul li ul {
         position: relative;
         top: 0;
         left: 0;
     }
-    
-    header .row .logo{
+
+    header .row .logo {
         order: 0;
     }
-    header .row nav  {
+
+    header .row nav {
         order: 2;
     }
+
     header .row .search {
         order: 1;
         position: absolute;
         right: 40%;
     }
-    header .row  nav ul > i{
+
+    header .row nav ul>i {
         color: #ECECEC;
         margin-top: 2rem;
         font-size: 2.5rem;
         text-align: right;
         display: inline-block !important;
         width: 100%;
+        padding-right: 1.8rem;
     }
-    header .row nav > i{
+
+    header .row nav>i {
         display: inline-block !important;
     }
-    .showHide{
-        right: 0;
+
+    .showHide {
+        right: 0%;
     }
 
 }
