@@ -96,30 +96,34 @@
                         exotic natural scenery</h2>
                     <p>Explore the world with what you love beautiful natural beauty.</p>
                 </div>
-
+                <div class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
                 <div class="swiper explore-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card-img">
                                 <img src="./assets/images/explore-1" alt="">
                             </div>
-                            <div class="explore-cricle">
-                               <span> “</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span> “</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-
                             <div class="card-img">
                                 <img src="./assets/images/explore-2" alt="">
                             </div>
-                            <div class="explore-cricle">
-                               <span> “</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span> “</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -128,10 +132,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-7" alt="">
                             </div>
-                            <div class="explore-cricle">
-                               <span> “</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span> “</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -140,10 +144,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-4" alt="">
                             </div>
-                            <div class="explore-cricle">
-                                <span>“</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span>“</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -152,10 +156,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-5" alt="">
                             </div>
-                            <div class="explore-cricle">
-                                <span>“</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span>“</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -164,10 +168,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-6" alt="">
                             </div>
-                            <div class="explore-cricle">
-                                <span>“</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span>“</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -176,10 +180,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-7" alt="">
                             </div>
-                            <div class="explore-cricle">
-                                <span>“</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span>“</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -188,10 +192,10 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-8" alt="">
                             </div>
-                            <div class="explore-cricle">
-                                <span>“</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span>“</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
@@ -200,16 +204,16 @@
                             <div class="card-img">
                                 <img src="./assets/images/explore-5" alt="">
                             </div>
-                            <div class="explore-cricle">
-                               <span> “</span>
-                            </div>
                             <div class="card-text">
+                                <div class="explore-cricle">
+                                    <span> “</span>
+                                </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+
                 </div>
 
             </div>
@@ -387,6 +391,10 @@
         var swiper = new Swiper(".explore-slider", {
             slidesPerView: 1,
             spaceBetween: 10,
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,

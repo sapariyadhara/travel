@@ -289,26 +289,116 @@ header .row nav ul>i {
     color: #878787;
     margin-bottom: 8.4rem;
 }
-.explore-slider .swiper-slide{
+
+.explore-slider .swiper-slide {
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
     border-radius: 1rem;
-}
-.explore-slider .swiper-slide .card-img {
-   
+    transition: all 1s;
 }
 
+.explore-slider .swiper-slide .card-img {}
+
 .explore-slider .swiper-wrapper {
-    padding: 1rem 0;
+    padding: 1rem 0 17.8rem 0;
+    margin-top: 2rem;
 }
 
 
 .explore-slider .swiper-slide .card-img img {
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
     width: 44.4rem;
-    height: 31.6rem;
+    height: 36rem;
     object-fit: cover;
     object-position: center center;
 }
+
+.explore-slider .card-text {
+    padding: 3.4rem 0 2.6rem 1.4rem;
+    position: relative;
+    display: none;
+    transition: all 1s;
+}
+
+.explore-slider .card-text .explore-cricle {
+    position: absolute;
+    top: -2rem;
+    right: 3rem;
+    width: 8rem;
+    height: 7.6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.explore-slider .card-text .explore-cricle span {
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 11rem;
+    color: #000000;
+}
+
+.explore-slider .card-text h4 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+}
+
+.explore-slider .card-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555555;
+}
+
+#explore .containor {
+    position: relative;
+}
+
+#explore .containor .prev,
+#explore .containor .next {
+    z-index: 8;
+    position: absolute;
+    top: 37rem;
+    width: 7rem;
+    height: 6.6rem;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+
+#explore .containor .prev {
+    left: 7rem;
+}
+
+#explore .containor .next {
+    right: 7rem;
+}
+
+.explore-slider .swiper-slide:hover {
+    transform: scaleY(1.1);
+    border-radius: 1rem;
+    z-index: 7;
+}
+
+.explore-slider .swiper-slide:hover .card-text {
+    display: inline-block;
+    border:1px solid black ;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+
+}
+
+.explore-slider .swiper-slide:hover .card-img img {
+    border-radius: 1rem 1rem 0 0;
+    height: 31.6rem;
+}
+
 
 
 /*************************************/
