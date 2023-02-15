@@ -299,7 +299,7 @@ header .row nav ul>i {
 .explore-slider .swiper-slide .card-img {}
 
 .explore-slider .swiper-wrapper {
-    padding: 1rem 0 17.8rem 0;
+    padding: 1rem 0 0 0;
     margin-top: 2rem;
 }
 
@@ -353,7 +353,9 @@ header .row nav ul>i {
     line-height: 21px;
     color: #555555;
 }
-
+#explore{
+    /* padding-bottom: 17rem; */
+}
 #explore .containor {
     position: relative;
 }
@@ -376,12 +378,12 @@ header .row nav ul>i {
 
 #explore .containor .prev {
     left: 7rem;
-    color:  #737373;
+    color: #737373;
 }
 
 #explore .containor .next {
     right: 7rem;
-    color:  #737373;
+    color: #737373;
 }
 
 .explore-slider .swiper-slide:hover {
@@ -392,13 +394,8 @@ header .row nav ul>i {
 }
 
 .explore-slider .swiper-slide:hover .card-text {
-<<<<<<< HEAD
     display: inline-block;
     border: 1px solid black;
-=======
-    /* display: inline-block; */
-    border:1px solid black ;
->>>>>>> 52003912231f50600934b3bc2a0471b7838d32d6
     border-top: none;
     border-radius: 0 0 1rem 1rem;
     opacity: 1;
@@ -409,25 +406,105 @@ header .row nav ul>i {
     height: 31.6rem;
 }
 
-
-
 /*************************************/
 
 /************Why Select Section**********/
 
-#why-select{
+#why-select {
     background: url(../images/why.jpg);
     background-size: 100% 54.2rem;
     background-position: center center;
+    background-repeat: no-repeat;
 }
-#why-select .main-titel h2{
+
+#why-select  .main-titel h2 {
     color: var(--secondary-color);
-    padding-top: 2.6rem;
+    margin-top: 2.6rem;
 }
-#why-select .main-titel p{
+
+#why-select .main-titel p {
     color: var(--secondary-color);
     padding-top: 0.6rem;
 }
+
+.why-slider .swiper-slide {
+    width: 33rem;
+    height: 43rem;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 4.5rem 2rem 7rem 2rem;
+    margin-top: 7.5rem;
+}
+.why-slider .why-img{
+    width: 9.5rem;
+    height: 9.7rem;
+    background-color: #000;
+}
+.why-slider .why-img img{
+    object-position: center center;
+    object-fit: cover;
+
+}
+
+.why-slider .why-text {}
+
+.why-slider .why-text h4 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+    margin-top: 3.3rem;
+}
+
+.why-slider .why-text p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #858585;
+    margin-top: 1rem;
+}
+
+.why-slider .why-text  a {
+    margin-top: 3.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    
+}
+#why-select  {
+    position: relative;
+}
+#why-select  .prev,
+#why-select  .next {
+    z-index: 8;
+    position: absolute;
+    top: 33rem;
+    width: 7rem;
+    height: 6.6rem;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6.5rem;
+   
+}
+
+#why-select  .prev {
+    left: 7rem;
+    color: #737373;
+}
+
+#why-select  .next {
+    right: 7rem;
+    color: #737373;
+}
+
+
 /******************************************/
 
 @media screen and (max-width:1250px) {
