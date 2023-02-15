@@ -388,7 +388,7 @@ header .row nav ul>i {
 
 .explore-slider .swiper-slide:hover .card-text {
     display: inline-block;
-    border:1px solid black ;
+    border: 1px solid black;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
 
@@ -420,7 +420,7 @@ header .row nav ul>i {
 @media screen and (max-width:992px) {
     header nav>ul {
         position: absolute;
-        top: 1rem;
+        top: 0;
         right: -35%;
         width: 35%;
         height: 100vh;
@@ -431,7 +431,6 @@ header .row nav ul>i {
     header .row nav ul li {
         display: block;
         width: 100%;
-
     }
 
     header .row nav ul li a {
@@ -440,6 +439,7 @@ header .row nav ul>i {
     }
 
     header .row nav ul li ul {
+        width: 100%;
         position: relative;
         top: 0;
         left: 0;
@@ -447,12 +447,31 @@ header .row nav ul>i {
 
     header nav ul li ul li a {
         padding-left: 6rem;
+        width: 100%;
+        padding: 1.3rem;
     }
 
-    header.row nav ul li ul li ul {
+    header nav ul li ul li ul {
         position: relative;
         top: 0;
         left: 0;
+    }
+
+    header .row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    header .row nav ul li ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
+    header .row nav ul li ul li ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 6rem;
     }
 
     header .row .logo {
@@ -466,7 +485,7 @@ header .row nav ul>i {
     header .row .search {
         order: 1;
         position: absolute;
-        right: 40%;
+        right: 36%;
     }
 
     header .row nav ul>i {
