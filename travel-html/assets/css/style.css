@@ -291,9 +291,9 @@ header .row nav ul>i {
 }
 
 .explore-slider .swiper-slide {
-    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
-    border-radius: 1rem;
-    transition: all 1s;
+    /* box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25); */
+    /* border-radius: 1rem; */
+    transition: all 0.5s;
 }
 
 .explore-slider .swiper-slide .card-img {}
@@ -310,13 +310,15 @@ header .row nav ul>i {
     height: 36rem;
     object-fit: cover;
     object-position: center center;
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
 }
 
 .explore-slider .card-text {
     padding: 3.4rem 0 2.6rem 1.4rem;
     position: relative;
-    display: none;
-    transition: all 1s;
+    /* display: none; */
+    transition: all 0.5s;
+    opacity: 0;
 }
 
 .explore-slider .card-text .explore-cricle {
@@ -374,24 +376,32 @@ header .row nav ul>i {
 
 #explore .containor .prev {
     left: 7rem;
+    color:  #737373;
 }
 
 #explore .containor .next {
     right: 7rem;
+    color:  #737373;
 }
 
 .explore-slider .swiper-slide:hover {
-    transform: scaleY(1.1);
     border-radius: 1rem;
-    z-index: 7;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
+    border-radius: 1rem;
 }
 
 .explore-slider .swiper-slide:hover .card-text {
+<<<<<<< HEAD
     display: inline-block;
     border: 1px solid black;
+=======
+    /* display: inline-block; */
+    border:1px solid black ;
+>>>>>>> 52003912231f50600934b3bc2a0471b7838d32d6
     border-top: none;
     border-radius: 0 0 1rem 1rem;
-
+    opacity: 1;
 }
 
 .explore-slider .swiper-slide:hover .card-img img {
@@ -402,6 +412,23 @@ header .row nav ul>i {
 
 
 /*************************************/
+
+/************Why Select Section**********/
+
+#why-select{
+    background: url(../images/why.jpg);
+    background-size: 100% 54.2rem;
+    background-position: center center;
+}
+#why-select .main-titel h2{
+    color: var(--secondary-color);
+    padding-top: 2.6rem;
+}
+#why-select .main-titel p{
+    color: var(--secondary-color);
+    padding-top: 0.6rem;
+}
+/******************************************/
 
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
