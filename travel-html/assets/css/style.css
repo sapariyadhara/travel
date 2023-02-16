@@ -125,17 +125,17 @@ header .row nav ul li a {
     color: var(--secondary-color);
     font-size: 1.8rem;
     font-weight: 500;
-    padding: 3.3rem;
+    padding: 1.3rem 3.3rem;
 }
 
 header .row>a i {
     font-size: 1.8rem;
     color: var(--secondary-color);
-    padding-left: 3.3rem;
+    padding: 1.3rem 3.3rem;
 }
 
 header .row nav ul li a:hover {
-    background-color: #9B9B9B;
+    background-color: rgba(0 0 0 / 0.4);
 }
 
 .dark-header {
@@ -146,22 +146,23 @@ header .row nav ul li a:hover {
 header .row nav ul li ul {
     display: none;
     position: absolute;
-    top: 5.8rem;
+    top: 3.8rem;
     left: 0;
     width: 29rem;
-    background-color: rgba(0 0 0 / 0.4)
+    /* background-color: rgba(0 0 0 / 0.4) */
 }
 
 header .row nav ul li ul li {
     display: inline-block;
     width: 100%;
     position: relative;
-
 }
-
+header .row nav ul li a i{
+    transition: all 0.5s;
+}
 header .row nav ul li ul li a {
     display: inline-block;
-    padding: 3.3rem;
+    padding: 1.3rem 3.3rem;
     width: 100%;
 }
 
@@ -178,6 +179,12 @@ header .row nav ul li ul li ul {
 
 header .row nav ul li ul li:hover ul {
     display: inline-block !important;
+}
+header .row nav ul li:hover a i{
+    transform: rotate(90deg);
+}
+header .row nav ul li ul li:hover a i{
+    transform: rotateY(45deg);
 }
 
 header .row nav>i {
@@ -250,6 +257,7 @@ header .row nav ul>i {
     font-weight: 500;
     font-size: 18px;
     background-color: var(--secondary-color);
+    outline: none;
 }
 
 .search-form .explore {
@@ -497,12 +505,12 @@ header .row nav ul>i {
 }
 
 .why-select-arrow .prev {
-    left: -7rem;
+    left: -13rem;
     color: #737373;
 }
 
 .why-select-arrow .next {
-    right: -7rem;
+    right: -13rem;
     color: #737373;
 }
 
@@ -514,7 +522,12 @@ header .row nav ul>i {
     display: flex;
     justify-content: space-evenly;
 } 
-
+#our-tour .main-titel p{
+    margin-bottom: 0;
+}
+#our-tour .tour-partner {
+    padding-top: 6.9rem;
+}
 /**************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
@@ -540,7 +553,6 @@ header .row nav ul>i {
         transition: all 0.5s;
         background-color: grey;
     }
-
     header .row nav ul li {
         display: block;
         width: 100%;
@@ -549,6 +561,7 @@ header .row nav ul>i {
     header .row nav ul li a {
         display: block;
         width: 100%;
+        padding: 1.3rem;
     }
 
     header .row nav ul li ul {
@@ -593,24 +606,27 @@ header .row nav ul>i {
 
     header .row nav {
         order: 2;
+        
     }
 
     header .row .search {
         order: 1;
-        position: absolute;
-        right: 36%;
+       
+        
     }
 
     header .row nav ul>i {
         color: #ECECEC;
-        margin-top: 2rem;
+        margin-top: 2.7rem;
         font-size: 2.5rem;
         text-align: right;
         display: inline-block !important;
         width: 100%;
         padding-right: 1.8rem;
     }
-
+    header .row nav ul li:hover a i{
+        transform: rotate(90deg);
+    }
     header .row nav>i {
         display: inline-block !important;
     }
