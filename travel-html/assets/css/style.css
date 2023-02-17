@@ -581,21 +581,29 @@ header .row nav ul>i {
     font-size: 18px;
     line-height: 40px;
     color: #626262;
+    /* padding-bottom: 10rem; */
 }
 
 #our-client .our-client-slider .swiper-slide {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    position: relative;
+    /* position: relative; */
     width: 399px;
     height: 432px;
+    padding: 5rem 5.4rem 5.1rem 5.3rem;
+}
+
+.our-client-slider .swiper-slide .client-img {
+    position: relative;
 }
 
 .our-client-slider .swiper-slide .client-img img {
-    /* position: absolute; */
-    top: -2rem;
-
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    top: -12rem;
+    left: 10rem;
 }
 
 .our-client-slider .swiper-slide .client-data {
@@ -617,12 +625,16 @@ header .row nav ul>i {
     color: #858585;
 }
 
-.our-client-slider .swiper-slide .client-data  a{
+.our-client-slider .swiper-slide .client-data a {
     padding-top: 5rem;
     display: inline-block;
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    color: yellow;
+    padding-bottom: 1.8rem;
 }
-.our-client-slider .swiper-slide .client-data > p {
+
+.our-client-slider .swiper-slide .client-data>p {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -630,6 +642,76 @@ header .row nav ul>i {
     text-align: left;
 }
 
+.our-client-folder {
+    position: relative;
+    margin-top: 15rem;
+    display: block;
+}
+
+.our-client-arrow {
+    position: relative;
+}
+
+.our-client-arrow .prev2,
+.our-client-arrow .next2 {
+    z-index: 8;
+    position: absolute;
+    top: -13rem;
+    width: 7rem;
+    height: 6.6rem;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+
+.our-client-arrow .prev2 {
+    right: 16rem;
+    color: #737373;
+}
+
+.our-client-arrow .next2 {
+    right: 3rem;
+    color: #737373;
+}
+
+/********Subcribe section************/
+#subcribe {
+    background-color: var(--bg-color);
+    padding: 7.1rem 0 0 0;
+}
+
+#subcribe .main-titel h2 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+#subcribe .main-titel p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: #DFDFDF;
+}
+.Subcribe-form{
+    width: 73.6rem;
+    height: 7.8rem;
+    background: #FFFFFF;
+    border: 1px solid #CBCACA;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+    border-radius: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.9rem 0 2.3rem;
+}
+/************************************/
 /************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
