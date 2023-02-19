@@ -677,11 +677,10 @@ header .row nav ul>i {
     right: 3rem;
     color: #737373;
 }
-
 /********Subcribe section************/
 #subcribe {
     background-color: var(--bg-color);
-    padding: 7.1rem 0 0 0;
+    padding: 7.1rem 0 15rem 0;
 }
 
 #subcribe .main-titel h2 {
@@ -699,9 +698,10 @@ header .row nav ul>i {
     text-align: center;
     color: #DFDFDF;
 }
-.Subcribe-form{
+
+.Subcribe-form {
     width: 73.6rem;
-    height: 7.8rem;
+    height: 7.2rem;
     background: #FFFFFF;
     border: 1px solid #CBCACA;
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
@@ -710,8 +710,98 @@ header .row nav ul>i {
     justify-content: space-between;
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
+    margin: 0 auto;
 }
+
+.Subcribe-form .email-form {
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #9B9B9B;
+}
+
+.Subcribe-form .Subscribe {
+    background-color: #000;
+    color: var(--secondary-color);
+    border-radius: 38rem;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
 /************************************/
+
+/***********Traveler Section*********/
+#travelers {
+    padding: 8.9rem 0 8rem 0;
+}
+
+.travel {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+}
+
+.travel .travelers .tra-img {
+    display: flex;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+.travel .travelers .tra-img img {
+    height: 4.7rem;
+    margin-left: 1rem;
+}
+
+.travel h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.travel p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #6C6C6C;
+    margin-bottom: 1rem;
+}
+.contact-info p a{
+    display: inline-block;
+    padding: 1rem;
+    color: #000;
+}
+.follow-us .follow-icon{
+    display: flex;
+}
+.follow-us .follow-icon p a{
+    display: inline-block;
+    color: #3D3D3D;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+} 
+.copyright {
+    padding: 4rem 0 2rem 0;
+    background-color: #000;
+}
+
+.copyright p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: #DFDFDF;
+}
+
+/***********************************/
 /************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
