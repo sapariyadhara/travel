@@ -108,7 +108,7 @@ header .row {
 }
 
 header .row nav {
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 header .row nav ul {
@@ -153,7 +153,7 @@ header .row nav ul li ul {
     top: 3.8rem;
     left: 0;
     width: 29rem;
-    /* background-color: rgba(0 0 0 / 0.4) */
+    background-color: rgba(0 0 0 / 0.4)
 }
 
 header .row nav ul li ul li {
@@ -266,6 +266,7 @@ header .row nav ul>i {
     font-size: 18px;
     background-color: var(--secondary-color);
     outline: none;
+    font-family: 'Poppins';
 }
 
 .search-form .explore {
@@ -273,8 +274,11 @@ header .row nav ul>i {
     color: var(--secondary-color);
     border-radius: 38rem;
     padding: 15px 20px;
-    font-weight: 500;
+    font-weight: bold;
+    border: none;
     font-size: 18px;
+    font-family: 'Poppins';
+
 }
 
 .hero-data span {
@@ -290,7 +294,7 @@ header .row nav ul>i {
     margin: 17.8rem 0 12rem;
 }
 
-.main-titel h2 {
+.main-title h2 {
     /* padding-top: 17.8rem; */
     font-weight: 600;
     font-size: 60px;
@@ -300,7 +304,7 @@ header .row nav ul>i {
     margin-bottom: 3rem;
 }
 
-.main-titel p {
+.main-title p {
     font-weight: 500;
     font-size: 18px;
     line-height: 36px;
@@ -371,11 +375,6 @@ header .row nav ul>i {
 .explore-select-folder {
     position: relative;
 }
-
-.explore-arrow {
-    position: relative;
-}
-
 .explore-arrow .prev,
 .explore-arrow .next {
     z-index: 8;
@@ -390,6 +389,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
+    cursor: pointer;
 }
 
 .explore-arrow .prev {
@@ -417,6 +417,8 @@ header .row nav ul>i {
 .explore-slider .swiper-slide:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
+    cursor: pointer;
+    box-shadow: none;
 }
 
 /*************************************/
@@ -434,19 +436,19 @@ header .row nav ul>i {
     margin-bottom: 17rem;
 }
 
-#why-select .main-titel h2 {
+#why-select .main-title h2 {
     color: var(--secondary-color);
     margin-top: 2.6rem;
 }
 
-#why-select .main-titel p {
+#why-select .main-title p {
     color: var(--secondary-color);
     padding-top: 0.6rem;
 }
 
-.why-slider {
-    /* display: flex;
-    column-gap: 6rem;  */
+.why-slider .swiper-wrapper{
+    padding-bottom: 3rem;
+  
 }
 
 .why-slider .swiper-slide {
@@ -505,11 +507,6 @@ header .row nav ul>i {
     position: relative;
     margin: 0 4rem;
 }
-
-.why-select-arrow {
-    position: relative;
-}
-
 .why-select-arrow .prev1,
 .why-select-arrow .next1 {
     z-index: 8;
@@ -524,7 +521,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
-
+    cursor: pointer;
 }
 
 .why-select-arrow .prev1 {
@@ -541,12 +538,15 @@ header .row nav ul>i {
 /******************************************/
 
 /***********Our Tour partner Section*********/
+
 .tour-partner {
     display: flex;
     justify-content: space-evenly;
 }
-
-#our-tour .main-titel p {
+#our-tour {
+    margin-top: 15.8rem;
+}
+#our-tour .main-title p {
     margin-bottom: 0;
 }
 
@@ -558,7 +558,8 @@ header .row nav ul>i {
 
 /************our client section********/
 .client-containor {
-    margin: 17rem 0 18rem 7.7rem;
+    margin: 17rem 0 18rem 0;
+    margin-left: calc((100% - 1370px) / 2);
 }
 
 .client-containor .client-say p span {
@@ -588,28 +589,36 @@ header .row nav ul>i {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    /* position: relative; */
     width: 399px;
     height: 432px;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
 }
-
+.our-client-slider .swiper-wrapper{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
 .our-client-slider .swiper-slide .client-img {
-    position: relative;
+   
 }
 
 .our-client-slider .swiper-slide .client-img img {
-    position: absolute;
     width: 13rem;
     height: 13rem;
-    top: -12rem;
-    left: 10rem;
+    /* margin: -12rem 0 0 8.3rem;
+    display: inline; */
+    position: absolute;
+    top: -17%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
 }
 
 .our-client-slider .swiper-slide .client-data {
     text-align: center;
 }
-
+.our-client-slider  .client-bio{
+    position: relative;
+}
 .our-client-slider .swiper-slide .client-data h4 {
     font-weight: 600;
     font-size: 24px;
@@ -630,10 +639,13 @@ header .row nav ul>i {
     display: inline-block;
     display: flex;
     justify-content: flex-start;
-    color: yellow;
+    color:  #F4BC61;
     padding-bottom: 1.8rem;
 }
-
+.our-client-slider .swiper-slide .client-data a  i{
+    margin-right: 0.7rem;
+    font-size: 1.5rem;
+}
 .our-client-slider .swiper-slide .client-data>p {
     font-weight: 500;
     font-size: 18px;
@@ -648,9 +660,7 @@ header .row nav ul>i {
     display: block;
 }
 
-.our-client-arrow {
-    position: relative;
-}
+
 
 .our-client-arrow .prev2,
 .our-client-arrow .next2 {
@@ -666,6 +676,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
+    cursor: pointer;
 }
 
 .our-client-arrow .prev2 {
@@ -680,10 +691,10 @@ header .row nav ul>i {
 /********Subcribe section************/
 #subcribe {
     background-color: var(--bg-color);
-    padding: 7.1rem 0 15rem 0;
+    padding: 3.1rem 0 15rem 0;
 }
 
-#subcribe .main-titel h2 {
+#subcribe .main-title h2 {
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 60px;
@@ -691,7 +702,7 @@ header .row nav ul>i {
     text-align: center;
 }
 
-#subcribe .main-titel p {
+#subcribe .main-title p {
     font-weight: 500;
     font-size: 18px;
     line-height: 34px;
@@ -711,6 +722,7 @@ header .row nav ul>i {
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
     margin: 0 auto;
+    font-family: 'Poppins';
 }
 
 .Subcribe-form .email-form {
@@ -728,13 +740,15 @@ header .row nav ul>i {
     padding: 15px 20px;
     font-weight: 500;
     font-size: 18px;
+    border: none;
+    font-weight: bold;
 }
 
 /************************************/
 
 /***********Traveler Section*********/
 #travelers {
-    padding: 8.9rem 0 8rem 0;
+    padding: 8.9rem 0 0 0;
 }
 
 .travel {
@@ -750,8 +764,9 @@ header .row nav ul>i {
 }
 
 .travel .travelers .tra-img img {
-    height: 4.7rem;
+    /* height: 4.7rem; */
     margin-left: 1rem;
+    margin: auto 0;
 }
 
 .travel h4 {
