@@ -797,11 +797,33 @@ header .row nav ul>i {
     margin-bottom: 1rem;
 }
 
-.contact-info p a {
-    display: inline-block;
-    padding: 1rem;
-    color: #000;
+.contact-info ul {
+    list-style-type: none;
 }
+
+.contact-info ul li a {
+    display: inline-block;
+    padding: 0 1rem;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.contact-info ul li {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    display: flex;
+    color: #6C6C6C;
+}
+
+.contact-info ul li a i {
+    color: #000;  
+}
+.contact-info ul li a i:hover {
+    color: #069ABA;
+}
+
 
 .follow-us .follow-icon {
     display: flex;
@@ -828,14 +850,37 @@ header .row nav ul>i {
     text-align: center;
     color: #DFDFDF;
 }
-
-.q-link a {
+.q-link ul{
+    list-style-type: none;
+}
+.q-link ul li a {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3.4rem;
     display: flex;
     align-items: center;
     color: #6C6C6C;
+}
+.q-link ul li a:hover {
+    color: #069ABA;
+    border-bottom:2px solid #069ABA;
+}
+.follow-us  ul {
+    list-style-type: none;
+}
+.follow-us ul li{
+    display: inline-block;
+}
+.follow-us ul li a{
+    display: inline-block;
+    color: #3D3D3D;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    padding-right: 1.5rem;
+}
+.follow-us ul li a:hover{
+    color: #069ABA;
 }
 
 /***********************************/
@@ -931,17 +976,57 @@ header .row nav ul>i {
     .logo img {
         max-width: 80%;
     }
+
     header .row nav ul li a {
         font-size: 1.6rem;
         padding: 1.3rem 1.3rem;
     }
+
     header .row>a i {
         font-size: 1.6rem;
         padding: 1.3rem 1.3rem;
     }
+
     .hero-data h1 {
         font-size: 6rem;
         line-height: 7rem;
+    }
+
+    .hero-data p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin: 3rem 0 1.1rem 0;
+    }
+
+    .hero-data .search-form {
+        width: 68.6rem;
+        height: 6.8rem;
+    }
+
+    .search-form .explore {
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .search-form select {
+        font-size: 1.6rem;
+    }
+
+    .explore-arrow .prev,
+    .explore-arrow .next {
+        width: 5rem;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        line-height: 4.5rem;
+        top: -5.4rem;
+    }
+
+    .main-title p {
+        margin-bottom: 4.4rem;
+    }
+
+    #hero .hero-data {
+        top: 40%;
     }
 }
 
