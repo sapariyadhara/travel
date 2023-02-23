@@ -700,9 +700,21 @@ header .row nav ul>i {
 
 /********Subcribe section************/
 #subcribe {
-    background-color: var(--bg-color);
+    background: url(../images/subscribe.img.jpg);
     padding: 3.1rem 0 15rem 0;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
 }
+
+/* #subcribe::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+} */
 
 #subcribe .main-title h2 {
     color: var(--secondary-color);
@@ -785,7 +797,7 @@ header .row nav ul>i {
     color: #000000;
 }
 
-.travel ul li{
+.travel ul li {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -1063,36 +1075,44 @@ header .row nav ul>i {
         line-height: 2rem;
         padding-top: 4.2rem;
     }
+
     #subcribe .main-title h2 {
         font-size: 5rem;
         line-height: 6rem;
     }
+
     #subcribe .main-title p {
         font-size: 1.6rem;
         line-height: 3rem;
     }
+
     .Subcribe-form .email-form {
         font-size: 1.8rem;
         line-height: 3rem;
     }
+
     .travel h4 {
         font-size: 2rem;
         line-height: 6rem;
     }
-    #travelers ul li  {
+
+    #travelers ul li {
         font-size: 1.6rem;
         line-height: 3rem;
     }
+
     #travelers ul li a {
         font-size: 1.6rem;
     }
-    .travel .travelers .tra-img  img {
-        max-width: 86%;     
+
+    .travel .travelers .tra-img img {
+        max-width: 86%;
     }
+
     .copyright p {
         font-size: 1.6rem;
     }
-    
+
 }
 
 /* 992-1199 */
@@ -1152,6 +1172,7 @@ header .row nav ul>i {
     #hero .hero-data {
         top: 40%;
     }
+
     .why-select-arrow .prev1,
     .why-select-arrow .next1 {
         width: 5rem;
@@ -1160,7 +1181,8 @@ header .row nav ul>i {
         line-height: 4.5rem;
         top: -1.4rem;
     }
-    .our-client-arrow .prev2 ,
+
+    .our-client-arrow .prev2,
     .our-client-arrow .next2 {
         width: 5rem;
         height: 4.6rem;
@@ -1168,16 +1190,69 @@ header .row nav ul>i {
         line-height: 4.5rem;
         top: -5.4rem;
     }
+
     .our-client-arrow .prev2 {
         right: 10rem;
         color: #737373;
     }
+
     #why-select {
         background-size: 100% 47.2rem;
     }
+
+    #why-select {
+        margin-bottom: 15rem;
+    }
+
+    .tour-img img {
+        max-width: 70%;
+    }
+
+    #our-tour .tour-partner {
+        padding-top: 3.9rem;
+    }
+
+    .client-containor {
+        margin: 13rem 0 10rem 0;
+        margin-left: calc((100% - 90%) / 2);
+    }
+
+    .travel .travelers .tra-img img {
+        max-width: 70%;
+    }
+
+    #travelers ul li {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .q-link ul li a {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .follow-us ul li a {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .copyright {
+        padding: 3rem 0 1.5rem 0;
+    }
+
+    .our-client-slider .swiper-slide .client-data>p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    #our-client .our-client-slider .swiper-slide {
+        height: 37.2rem;
+        padding: 5rem 3.4rem 0.1rem 2.3rem;
+    }
 }
 
-/* @media screen and (max-width:992px) {
+/*768-991*/
+@media screen and (max-width:991px) {
     header nav>ul {
         position: absolute;
         top: 0;
@@ -1186,6 +1261,15 @@ header .row nav ul>i {
         height: 100vh;
         transition: all 0.5s;
         background-color: grey;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    #hero .hero-data {
+        position: relative;
+        padding-top: 20rem;
     }
 
     header .row nav ul li {
@@ -1260,7 +1344,7 @@ header .row nav ul>i {
         text-align: right;
         display: inline-block !important;
         width: 100%;
-        padding-right: 1.8rem;
+        padding-right: 3.4rem;
     }
 
     header .row nav ul li:hover a i {
@@ -1274,8 +1358,155 @@ header .row nav ul>i {
     .showHide {
         right: 0%;
     }
+
     header .row nav {
         margin-left: 1rem;
     }
 
-}  */
+    .hero-data .search-form {
+        width: 56.6rem;
+        height: 5.8rem;
+    }
+
+    .search-form .explore {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .search-form select {
+        font-size: 1.4rem;
+    }
+
+    .hero-data p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    #explore {
+        margin: 8.8rem 0 4rem;
+    }
+
+    .main-title h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .main-title p {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        margin-bottom: 7.4rem;
+    }
+
+    .explore-slider .card-text p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    #why-select {
+        margin-bottom: 7rem;
+    }
+    #why-select .main-title p {
+        margin-bottom: 1.4rem;
+    }
+    .why-slider .why-text p {
+        font-size: 1.4rem;
+    }
+    .why-slider .why-text a {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        line-height: 0rem;
+    }
+    .why-slider .swiper-slide {
+        padding: 4.5rem 1rem 3rem 2rem;
+        margin-bottom: 1rem;
+    }
+    .tour-img img {
+        max-width: 60%;
+    }
+    .client-containor {
+        margin: 6rem 0 6rem 0;
+        margin-left: calc((100% - 90%) / 2);
+    }
+    .client-containor .client-say h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .client-containor .client-say p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    .client-containor .client-say p span {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+    .our-client-slider .swiper-slide .client-data p {
+        font-size: 1.6rem;
+    }
+    .our-client-slider .swiper-slide .client-data>p {
+        line-height: 2rem;
+    }
+    .our-client-arrow .prev2, 
+    .our-client-arrow .next2 {
+        top: -7.4rem;
+    }
+    .our-client-arrow .next2 {
+        right: 42%;
+    }
+    .our-client-arrow .prev2 {
+        left: 42%;
+        color: #737373;
+    }
+    #subcribe .main-title h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    #subcribe .main-title p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 4.4rem;
+    }
+    .Subcribe-form {
+        width: 54.6rem;
+        height: 5.2rem;
+    }
+    .Subcribe-form .Subscribe {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    .Subcribe-form .email-form {
+        font-size: 1.4rem;
+    }
+    .travel h4 {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    #travelers ul li a {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    #travelers ul li {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    .travelers {
+        flex-basis: 22rem;
+    }
+    .travel .travelers .tra-img img {
+        max-width: 60%;
+    }
+    .travel .travelers .tra-img {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    #travelers ul li {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    .copyright p {
+        font-size: 1.4rem;
+    }
+    .copyright {
+        padding: 2rem 0 1rem 0;
+    }
+   
+
+}
