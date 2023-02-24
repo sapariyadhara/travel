@@ -324,7 +324,7 @@ header .row nav ul>i {
 
 .explore-slider .swiper-slide .card-img img {
     border-radius: 1rem;
-    width: 44.4rem;
+    width: 100%;
     height: 36rem;
     object-fit: cover;
     object-position: center center;
@@ -452,7 +452,7 @@ header .row nav ul>i {
 
 }
 
-.why-slider .swiper-slide {
+.why-slider .swiper-sd {
     /* width: 30rem;
     height: 43rem; */
     background: #FFFFFF;
@@ -460,8 +460,9 @@ header .row nav ul>i {
     border-radius: 1rem;
     padding: 4.5rem 0 7rem 2rem;
     margin-top: 7.6rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
     margin-bottom: 2rem;
+    margin-left: 6rem;
 }
 
 .why-slider .why-img {
@@ -589,13 +590,14 @@ header .row nav ul>i {
     /* padding-bottom: 10rem; */
 }
 
-#our-client .our-client-slider .swiper-slide {
+#our-client .our-client-slider .swiper-clt {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     width: 39.9rem;
     height: 43.2rem;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
+    margin: 0 3rem 0 3rem;
 }
 
 .our-client-slider .swiper-wrapper {
@@ -704,19 +706,23 @@ header .row nav ul>i {
     padding: 3.1rem 0 15rem 0;
     background-position: center center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: multiply;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply; */
+
+    z-index: -2;
 }
 
-/* #subcribe::before {
+#subcribe::before {
+    z-index: -1;
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-   
-} */
+}
 
 #subcribe .main-title h2 {
+    z-index: 1;
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 6rem;
@@ -1032,9 +1038,9 @@ header .row nav ul>i {
         top: -4.4rem;
     }
 
-    .why-slider .swiper-slide {
+    .why-slider .swiper-sd {
         padding: 4.5rem 1rem 5rem 2rem;
-        margin-top: 7.6rem;
+        margin-top: 5.6rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
     }
@@ -1245,14 +1251,24 @@ header .row nav ul>i {
         line-height: 2.6rem;
     }
 
-    #our-client .our-client-slider .swiper-slide {
+    #our-client .our-client-slider .swiper-clt {
+        width: 26.9rem;
         height: 37.2rem;
         padding: 5rem 3.4rem 0.1rem 2.3rem;
+        margin: 0px 1rem 0 2rem;
     }
 }
 
 /*768-991*/
 @media screen and (max-width:991px) {
+    .containor {
+        max-width: 100%;
+    }
+
+    header .row {
+        padding: 1rem 0;
+    }
+
     header nav>ul {
         position: absolute;
         top: 0;
@@ -1380,6 +1396,7 @@ header .row nav ul>i {
     .hero-data p {
         font-size: 1.4rem;
         line-height: 2.5rem;
+        padding-bottom: 3rem;
     }
 
     #explore {
@@ -1420,7 +1437,7 @@ header .row nav ul>i {
         line-height: 0rem;
     }
 
-    .why-slider .swiper-slide {
+    .why-slider .swiper-sd {
         padding: 4.5rem 1rem 3rem 2rem;
         margin-bottom: 1rem;
     }
@@ -1576,29 +1593,137 @@ header .row nav ul>i {
         padding-top: 15rem;
     }
 
+    #our-tour .main-title p {
+        line-height: 2.2rem;
+    }
+
     .main-title h2 {
         font-size: 3rem;
         line-height: 4rem;
     }
+
     .main-title p {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 4.4rem;
     }
+
     #explore {
         margin: 3.8rem 0 3rem;
     }
-    .explore-arrow .prev, .explore-arrow .next {
+
+    .explore-arrow .prev,
+    .explore-arrow .next {
         width: 4rem;
         height: 3.6rem;
         font-size: 1.2rem;
         line-height: 3.5rem;
         top: -4.4rem;
     }
+
     .explore-slider .card-text .explore-cricle {
         width: 6rem;
         height: 6.6rem;
         right: 10rem;
     }
-    
+
+    #why-select {
+        background-size: 100% 37.2rem;
+        margin-bottom: 6rem;
+    }
+
+    .why-slider .swiper-sd {
+        padding: 2.5rem 1rem 3rem 2rem;
+        width: 68%;
+        margin-left: 7rem;
+    }
+
+    .why-select-arrow .next1 {
+        right: -2rem;
+        color: #737373;
+    }
+
+    .why-select-arrow .prev1 {
+        left: -2rem;
+        color: #737373;
+    }
+
+    #our-tour {
+        margin-top: 5rem;
+    }
+
+    #our-tour .tour-partner {
+        padding-top: 3rem;
+    }
+
+    .client-containor {
+        margin: 4rem 0 0rem 0;
+        margin-left: calc((100% - 95%) / 2);
+    }
+
+    .client-containor .client-say p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .client-containor .client-say h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .client-containor .client-say p span {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .our-client-folder {
+        margin-top: 9rem;
+    }
+
+    #our-client .our-client-slider .swiper-clt {
+        width: 37.9rem;
+        height: 32.2rem;
+        margin: 0 auto;
+    }
+
+    #subcribe .main-title h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #subcribe .main-title p {
+        font-size: 1.2rem;
+    }
+
+    .Subcribe-form {
+        width: 51.6rem;
+        height: 5.2rem;
+    }
+
+    #subcribe {
+        padding: 3.1rem 0 10rem 0;
+    }
+
+    #travelers ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    #travelers ul li a {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .travel {
+        flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 1rem 4rem;
+            justify-content: normal;
+            padding-bottom: 3rem;
+    }
+    .copyright p {
+        font-size: 1.2rem;
+    }
+    #travelers {
+        padding: 3.9rem 0 0 0;
+    }
 }
